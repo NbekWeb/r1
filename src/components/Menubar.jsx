@@ -95,9 +95,11 @@ const Menubar = () => {
                   />
                   <Button type="primary">Оформить продажу</Button>
                   <Button onClick={toggleShowAnalitik}>
-                    <div className={showAnalitik ? "active" : ""}>
-                      Аналитика за сутки
-                      <Arrow className="icon" />
+                    <div>
+                      Аналитика за сутки {showAnalitik ? "s" : "1"}
+                      <span className={showAnalitik ? "rotate-90" : ""}>
+                        <Arrow className="icon" />
+                      </span>
                     </div>
                   </Button>
                   {showAnalitik && (
