@@ -10,7 +10,7 @@ import CookieIcon from "./icon/cookie";
 import Arrow from "./icon/arrowIcon";
 import Setting from "./icon/setting";
 import MenubarItem from "./MenubarItem";
-import { Calendar, Button ,ConfigProvider } from "antd";
+import { Calendar, Button, ConfigProvider } from "antd";
 import dayjs from "dayjs";
 import ruRU from "antd/lib/locale/ru_RU";
 import "dayjs/locale/ru";
@@ -96,7 +96,7 @@ const Menubar = () => {
                   <Button type="primary">Оформить продажу</Button>
                   <Button onClick={toggleShowAnalitik}>
                     <div className={showAnalitik ? "active" : ""}>
-                      Оформить продажу {showAnalitik ? "скрыть" : "показать"}
+                      Аналитика за сутки
                       <Arrow className="icon" />
                     </div>
                   </Button>
